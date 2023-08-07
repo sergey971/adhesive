@@ -1,13 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>test</h1>
+    <div class="wrapper">
+        <div class="container">
+            <main class="main">
+                <section class="namePage">
+                    <div class="namePage__body">
+                        <div class="namePage__row">
+                            <div class="namePage__desc">
+                                <div class="namePage__title">
+                                    <h1>Плоттерная и фрезерная резка</h1>
+                                </div>
+                                <div class="namePage__desc">
+                                    <p>Компания CUTCNC является надежным поставщиком услуг резки листовых материалов на
+                                        цифровых планшетных плоттерах KEENNESS Technology. Плоттер KEENNESS имеет в
+                                        своем арсенале порядка 8 инструментов для обработки более 30 материалов.</p>
+                                </div>
+                                <div class="namePage__prices">
+                                    <div class="namePage__prices__body">
+                                        <div class="namePage__prices__row">
+                                            <div class="namePage__price">
+                                                <span>Цена</span>
+                                                <span>от 15 ₽/м</span>
+                                            </div>
+                                            <div class="namePage__request">
+                                                <a href="#">Заявка на рассчет</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="namePage__image">
+                                <img src="./image/machine.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="advantages">
+                    <div class="advantages__body">
+                        <div class="advantages__row">
+                            <div class="advantages__col">
+                                <div class="advantages__col__row">
+                                    <div class="advantages__col__img">
+                                        <img src="./image/advantages/1.svg" alt="">
+                                    </div>
+                                    <div class="advantages__col__title">
+                                        <h2>Собственное программное обеспечение</h2>
+                                    </div>
+                                    <div class="advantages__col__desc">
+                                        <p>Позволяет выполнять операции резки или фрезеровки, биговки,
+                                            fмаркировки в ходе одного задания с высокой
+                                            точностью</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__col__row">
+                                    <div class="advantages__col__img">
+                                        <img src="./image/advantages/3.svg" alt="">
+                                    </div>
+                                    <div class="advantages__col__title">
+                                        <h2>Формат рабочего поля
+                                            3000 х 2000 мм</h2>
+                                    </div>
+                                    <div class="advantages__col__desc">
+                                        <p>Классический размер рекламных макетов
+                                            — вырежем изделие без склеек и швов единым контуром</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__col__row">
+                                    <div class="advantages__col__img">
+                                        <img src="./image/advantages/2.svg" alt="">
+                                    </div>
+                                    <div class="advantages__col__title">
+                                        <h2>Высокая скорость
+                                            резки ножом</h2>
+                                    </div>
+                                    <div class="advantages__col__desc">
+                                        <p>Достигает 1го метра в секунду, что в 10 раз быстрее лазерной резки.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages__col">
+                                <div class="advantages__col__row">
+                                    <div class="advantages__col__img">
+                                        <img src="./image/advantages/4.svg" alt="">
+                                    </div>
+                                    <div class="advantages__col__title">
+                                        <h2>Эксперт в цифровой
+                                            резки материалов</h2>
+                                    </div>
+                                    <div class="advantages__col__desc">
+                                        <p>Собственное конструкторское бюро и большой опыт производства, позволяют
+                                            выполнять заказы любой сложности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="form">
+                    <div class="form__body">
+                        <div class="form__row">
+                            <form class="shape" action="#" enctype="multipart/form-data">
+                                <div class="shape__body">
+                                    <div class="shape__title">
+                                        <h2>Заказать расчет резки</h2>
+                                    </div>
+                                    <div class="shape__row">
+                                        <div class="shape__col__left">
+                                            <div class="shape__col__box">
+                                                <label for="parameter">Параметры полотна, мм</label>
+                                                <input type="text" id="parameter" name="parameter"
+                                                    placeholder="3000х2000х6">
+                                            </div>
+                                            <div class="shape__col__box">
+                                                <label for="material">Материал полотна</label>
+                                                <select class="material" name="material" id="material">
+                                                    <option class="material__option" value="gofrokarton">Гофрокартон
+                                                    </option>
+                                                    <option class="material__option" value="gofrokarton">Гофрокартон
+                                                    </option>
+                                                    <option class="material__option" value="gofrokarton">Гофрокартон
+                                                    </option>
+                                                    <option class="material__option" value="gofrokarton">Гофрокартон
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="shape__col__box">
+                                                <label class="input-file"> Прикрепить макет
+                                                    <input class="file" type="file" name="file">
+                                                    <span class="input-file-btn">Выберите файл</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="shape__col__right">
+                                            <div class="shape__col__box">
+                                                <label for="nameClient">Имя</label>
+                                                <input type="text" id="nameClient" name="nameClient"
+                                                    placeholder="Иванов Иван">
+                                            </div>
+                                            <div class="shape__col__box">
+                                                <label for="phoneClient">Телефон</label>
+                                                <input type="text" id="phoneClient" name="phoneClient"
+                                                    placeholder="+7 (963) 000 - 00 - 00">
+                                            </div>
+                                            <div class="shape__col__box">
+                                                <label for="emailClient">E-mail</label>
+                                                <input type="email" id="emailClient" name="emailClient"
+                                                    placeholder="example@mail.ru">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__btn">
+                                        <div class="form__btn__row">
+                                            <div class="shapeBtn">
+                                                <button id="shapeBtn" type="submit">Отправить</button>
+                                            </div>
+                                            <div class="confidentiality">
+                                                <p>Нажав кнопку «Отправить», вы принимаете <a href="#">политику
+                                                        конфиденциальности</a> компании</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form__image">
+                                <img src="./image/form/formImage.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="materials">
+                    <div class="materials__body">
+                        <div class="materials__title">
+                            <h2>Наше оборудование</h2>
+                        </div>
+                        <div class="materials__row">
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/1.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/2.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/3.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/4.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/5.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/6.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/7.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/8.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/9.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/10.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/11.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="materials__col">
+                                <div class="materials__col__row">
+                                    <div class="materials__col__img">
+                                        <img src="./image/material/12.png" alt="">
+                                    </div>
+                                    <div class="materials__col__title">
+                                        <h4>Гофрокартон</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="machine">
+                    <div class="machine__body">
+                        <div class="machine__title">
+                            <h2>Наше оборудование</h2>
+                        </div>
+                        <div class="machine__row">
+                            <div class="machine__left__box">
+                                <div class="machine__left__row">
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>4 инструмента одновременно</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>На плоттере установлены: нож, биговочное колесо, фреза и маркер. При
+                                                    обработке материала смена рабочего инструмента происходит программой
+                                                    автоматически.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Автоматические прижимы материала</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Оригинальный механизм фиксации материала на столе по двум осям.
+                                                    Является альтернативой вакуумному прижиму. Только без шума и
+                                                    дополнительных расходных материалов.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Нож флюгерного типа со сменными лезвиями</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы
+                                                    толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров
+                                                    погонных. Средняя стоимость лезвия 20 руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Высокая скорость и точность резки</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Рабочая скорость резки до 50 метров в минуту. Точность
+                                                    позиционирования инструментов - 0,3 миллиметра.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Программа оптимизации резки</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Специальное ПО с комплексом инструментов для оптимизации макетов и
+                                                    ускорения процесса резки. Разработка Keenness Technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Автономное управление</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Специальное ПО с комплексом инструментов для оптимизации макетов и
+                                                    ускорения процесса резки. Разработка Keenness Technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="machine__left__col">
+                                        <div class="machine__left__col__row">
+                                            <div class="machine__left__title">
+                                                <h4>Модульная конструкция</h4>
+                                            </div>
+                                            <div class="machine__left__desc">
+                                                <p>Плоттер Keenness обеспечен встроенным пультом управления. Программы
+                                                    резки запускаются с USB флешки без подключения компьютера.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="machine__right__box">
+                                <div class="machine__right__img">
+                                    <img src="./image/mashine/1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="questions">
+                    <div class="questions__body">
+                        <div class="questions__title">
+                            <h2>Заказать расчет резки</h2>
+                        </div>
+                        <div class="questions__row">
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questions__col">
+                                <div class="questions__col__row">
+                                    <div class="questions__col__item">
+                                        <div class="questions__col__title"> <h4> Какие материалы можно резать на плоттере?</h4></div>
+                                        <div class="questions__col__btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="questions__col__desc"> <p>
+                                        Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.Оригинальный механизм фиксации материала на столе по двум осям. Является альтернативой вакуумному прижиму. Только без шума и дополнительных расходных материалов.  Трапецевидное лезвие с двумя рабочими сторонами. Режет материалы толщиной от 0,2 до 20 мм. Одного лезвия хватает на 1000 метров погонных. Средняя стоимость лезвия 20 руб.
+                                        Специальное ПО с комплексом инструментов для оптимизации макетов и ускорения процесса резки. Разработка Keenness Technology. Плоттер Keenness обеспечен встроенным пультом управления. Программы резки запускаются с USB флешки без подключения компьютера.
+                                        
+                                        Плоттер Keenness в разборе состоит из отдельных узлов, а рама изготовлена из алюминия. Это позволяет заносить их в стандартные дверные проемы без использования спецтехники.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
