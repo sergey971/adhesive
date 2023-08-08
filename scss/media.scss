@@ -1,0 +1,203 @@
+/* Add the transition property to the .namePage__row and .namePage__image elements */
+@media (max-width: 1219px) {
+    .namePage {
+        &__row {
+            flex-wrap: nowrap;
+            column-gap: 19px;
+        }
+
+        &__image {
+            margin-top: 46px;
+
+        }
+
+
+    }
+
+    * {
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 963px) {
+    .namePage {
+        &__image {
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .advantages {
+        margin-top: 0px;
+
+        &__row {
+            column-gap: 7px;
+        }
+    }
+
+    .form {
+        &__image {
+            display: none;
+        }
+    }
+
+    * {
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .namePage {
+        &__row {
+            // flex-wrap: wrap;
+        }
+
+        &__image {
+            img {
+                max-width: none !important;
+                width: 396px;
+            }
+        }
+
+        &__desc {
+            width: max-content;
+        }
+
+    }
+
+    .advantages {
+        margin-top: 0px;
+
+        &__row {
+            flex-wrap: wrap;
+        }
+
+        &__col__row {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            column-gap: 16px;
+        }
+
+        &__col {
+            flex: 0 1 48%;
+        }
+
+        &__col__box {
+            max-width: 68%;
+        }
+
+        &__col__img {
+            width: 60px;
+            height: 60px;
+            margin-top: -13px;
+
+        }
+    }
+
+    .form {
+        &__image {
+            display: none;
+        }
+
+        .shape {
+            max-width: 711px;
+            width: 100%;
+
+            &__col__left {
+                width: 100%;
+            }
+
+            &__col__right {
+                width: 100%;
+            }
+        }
+    }
+
+    .materials {
+        &__col {
+            max-width: 167px;
+        }
+
+    }
+
+    .machine {
+        &__row {
+            flex-direction: column-reverse;
+            column-gap: 10px;
+            width: 99%;
+        }
+
+        &__right__box {
+            max-width: none;
+            width: 93%;
+            margin-bottom: 24px;
+        }
+
+        &__right__box {
+            width: 100%;
+        }
+
+        .machine__left__desc {
+            width: 100%;
+        }
+
+        * {
+            transition: all 0.3s ease;
+        }
+    }
+
+
+
+    @media(max-width:500px) {
+        .namePage {
+            &__row {
+                flex-wrap: wrap;
+                column-gap: 19px;
+            }
+        }
+        .machine {
+            &__row {
+                width: 91%;
+            }
+        }
+        .advantages {
+            &__row {
+                flex-direction: column;
+                column-gap: 68px;
+            }
+
+            * {
+                transition: all 0.3s ease;
+            }
+        }
+
+        .form {
+            .shape {
+                width: 90%;
+                &__body{
+                    margin-left: 0px !important;
+                }
+                &__row {
+                    flex-direction: column;
+                    
+                }
+                .shapeBtn{
+                    max-width: none !important;
+                }
+            }
+            &__btn__row{
+                flex-direction: column;
+            }
+            form .form__btn .shapeBtn {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+        .questions__body {
+            width: 92%;
+        }
+
+    }
+}
