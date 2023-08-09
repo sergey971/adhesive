@@ -135,12 +135,43 @@
             margin-bottom: 24px;
         }
 
-        &__right__box {
-            width: 100%;
-        }
 
         .machine__left__desc {
-            width: 100%;
+            width: 79%;
+        }
+
+        * {
+            transition: all 0.3s ease;
+        }
+
+    }
+
+    .questions {
+        &__row {
+            width: 92%;
+        }
+    }
+}
+
+
+@media(max-width:500px) {
+    .namePage {
+        &__row {
+            flex-wrap: wrap;
+            column-gap: 19px;
+        }
+    }
+
+    .machine {
+        &__row {
+            width: 91%;
+        }
+    }
+
+    .advantages {
+        &__row {
+            flex-direction: column;
+            column-gap: 68px;
         }
 
         * {
@@ -148,56 +179,36 @@
         }
     }
 
+    .form {
+        .shape {
+            width: 90%;
 
+            &__body {
+                margin-left: 0px !important;
+            }
 
-    @media(max-width:500px) {
-        .namePage {
-            &__row {
-                flex-wrap: wrap;
-                column-gap: 19px;
-            }
-        }
-        .machine {
-            &__row {
-                width: 91%;
-            }
-        }
-        .advantages {
             &__row {
                 flex-direction: column;
-                column-gap: 68px;
+
             }
 
-            * {
-                transition: all 0.3s ease;
+            .shapeBtn {
+                max-width: none !important;
             }
         }
 
-        .form {
-            .shape {
-                width: 90%;
-                &__body{
-                    margin-left: 0px !important;
-                }
-                &__row {
-                    flex-direction: column;
-                    
-                }
-                .shapeBtn{
-                    max-width: none !important;
-                }
-            }
-            &__btn__row{
-                flex-direction: column;
-            }
-            form .form__btn .shapeBtn {
-                width: 100%;
-                margin-bottom: 16px;
-            }
-        }
-        .questions__body {
-            width: 92%;
+        &__btn__row {
+            flex-direction: column;
         }
 
+        form .form__btn .shapeBtn {
+            width: 100%;
+            margin-bottom: 16px;
+        }
     }
+
+    .questions__body {
+        width: 92%;
+    }
+
 }

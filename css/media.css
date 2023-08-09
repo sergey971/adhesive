@@ -107,18 +107,18 @@
     width: 93%;
     margin-bottom: 24px;
   }
-  .machine__right__box {
-    width: 100%;
-  }
   .machine .machine__left__desc {
-    width: 100%;
+    width: 79%;
   }
   .machine * {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
+  .questions__row {
+    width: 92%;
+  }
 }
-@media (max-width: 768px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .namePage__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
