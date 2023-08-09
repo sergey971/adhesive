@@ -101,6 +101,11 @@
   .materials__title h2 {
     font-size: 24px !important;
   }
+  .machine__right__box {
+    max-width: none;
+    width: 95% !important;
+    margin-bottom: 24px;
+  }
   .machine__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -113,11 +118,6 @@
   }
   .machine__title h2 {
     font-size: 24px !important;
-  }
-  .machine__right__box {
-    max-width: none;
-    width: 98%;
-    margin-bottom: 24px;
   }
   .machine .machine__left__desc {
     width: 79%;
@@ -133,13 +133,21 @@
     font-size: 24px !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 427px) {
+  .container {
+    padding: 0 11px !important;
+  }
   .namePage__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-column-gap: 19px;
        -moz-column-gap: 19px;
             column-gap: 19px;
+  }
+  .namePage__prices__row {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
   }
   .shape__title h2 {
     font-size: 24px;
