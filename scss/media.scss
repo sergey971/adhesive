@@ -54,6 +54,12 @@
             // flex-wrap: wrap;
         }
 
+        &__title {
+            h1 {
+                font-size: 32px;
+            }
+        }
+
         &__image {
             img {
                 max-width: none !important;
@@ -112,14 +118,24 @@
             &__col__right {
                 width: 100%;
             }
+
+            &__title {
+                h2 {
+                    font-size: 24px !important;
+                }
+            }
         }
     }
 
     .materials {
         &__col {
-            max-width: 167px;
+            max-width: 169px;
         }
-
+        &__title{
+            h2{
+                font-size: 24px !important;
+            }
+        }
     }
 
     .machine {
@@ -128,10 +144,14 @@
             column-gap: 10px;
             width: 99%;
         }
-
+        &__title{
+            h2{
+                font-size: 24px !important;
+            }
+        }
         &__right__box {
             max-width: none;
-            width: 93%;
+            width: 98%;
             margin-bottom: 24px;
         }
 
@@ -150,6 +170,11 @@
         &__row {
             width: 92%;
         }
+        &__title{
+            h2{
+                font-size: 24px !important;
+            }
+        }
     }
 }
 
@@ -160,11 +185,23 @@
             flex-wrap: wrap;
             column-gap: 19px;
         }
+
+    }
+
+    .shape {
+        &__title {
+            h2 {
+                font-size: 24px;
+            }
+        }
     }
 
     .machine {
         &__row {
             width: 91%;
+        }
+        &__left__box{
+            width: 98%;
         }
     }
 
@@ -208,7 +245,9 @@
     }
 
     .questions__body {
-        width: 92%;
+        width: 96%;
     }
 
 }
+
+@media (max-width: 386px) {}
