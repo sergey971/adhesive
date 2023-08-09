@@ -36,6 +36,9 @@
   }
 }
 @media (max-width: 768px) {
+  .namePage__title h1 {
+    font-size: 32px;
+  }
   .namePage__image img {
     max-width: none !important;
     width: 396px;
@@ -89,8 +92,14 @@
   .form .shape__col__right {
     width: 100%;
   }
+  .form .shape__title h2 {
+    font-size: 24px !important;
+  }
   .materials__col {
-    max-width: 167px;
+    max-width: 169px;
+  }
+  .materials__title h2 {
+    font-size: 24px !important;
   }
   .machine__row {
     -webkit-box-orient: vertical;
@@ -102,9 +111,12 @@
             column-gap: 10px;
     width: 99%;
   }
+  .machine__title h2 {
+    font-size: 24px !important;
+  }
   .machine__right__box {
     max-width: none;
-    width: 93%;
+    width: 98%;
     margin-bottom: 24px;
   }
   .machine .machine__left__desc {
@@ -117,6 +129,9 @@
   .questions__row {
     width: 92%;
   }
+  .questions__title h2 {
+    font-size: 24px !important;
+  }
 }
 @media (max-width: 500px) {
   .namePage__row {
@@ -126,8 +141,14 @@
        -moz-column-gap: 19px;
             column-gap: 19px;
   }
+  .shape__title h2 {
+    font-size: 24px;
+  }
   .machine__row {
     width: 91%;
+  }
+  .machine__left__box {
+    width: 98%;
   }
   .advantages__row {
     -webkit-box-orient: vertical;
@@ -168,6 +189,6 @@
     margin-bottom: 16px;
   }
   .questions__body {
-    width: 92%;
+    width: 96%;
   }
 }
