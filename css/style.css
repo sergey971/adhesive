@@ -274,14 +274,14 @@
 .form form .shape__survey ::after {
   content: "";
   position: absolute;
-  top: 35px;
+  top: 33px;
   height: 30px;
   width: 34px;
   background: url(../image/poly.svg);
   background-repeat: no-repeat;
   -webkit-transform: rotate(228deg);
           transform: rotate(228deg);
-  right: -21px;
+  right: -18px;
 }
 .form form label {
   color: #383838;
