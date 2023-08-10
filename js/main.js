@@ -1,11 +1,11 @@
 // Полифилл для метода forEach для NodeList
 if (window.NodeList && !NodeList.prototype.forEach) {
-	NodeList.prototype.forEach = function (callback, thisArg) {
-		thisArg = thisArg || window;
-		for (var i = 0; i < this.length; i++) {
-			callback.call(thisArg, this[i], i, this);
-		}
-	};
+    NodeList.prototype.forEach = function (callback, thisArg) {
+        thisArg = thisArg || window;
+        for (var i = 0; i < this.length; i++) {
+            callback.call(thisArg, this[i], i, this);
+        }
+    };
 }
 
 document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
@@ -31,7 +31,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
         })
     });
 
-    // клик снаружи
+
     document.addEventListener('click', function (e) {
         if (e.target !== dropDownBtn) {
             dropDownBtn.classList.remove("dropdown__button--active")
@@ -46,38 +46,103 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
         }
     })
 });
-const colDescs = document.querySelectorAll(".questions__col__desc");
+// const colDescs = document.querySelectorAll(".questions__col__desc");
+// ===================================================================
 const colBtns = document.querySelectorAll(".questions__col__btn");
+const colText = document.querySelectorAll(".questions__col__desc__text");
 
-function closeColDesc() {
-    colDescs.forEach((colDesc)=>{
-        colDesc.classList.add("none");
+function showText() {
+    colBtns.forEach(function (item, index) {
+        item.addEventListener('click', function () {
+                colText[index].classList.toggle('margin')
+                if(colText[index].classList.contains('margin')){
+                    colText[index].style.marginTop = '-132px';
+                    colText[index].style.transition = 'margin-top, .6s ease';
+                }
+                item.classList.toggle('rorate');
+        });
     })
 }
+showText()
+// function closeColDesc() {
+//     colDescs.forEach((colDesc) => {
+//         colDesc.classList.add("none");
+//     })
+// }
 
-closeColDesc(); 
+// closeColDesc();
 
-colBtns.forEach(function (item, index) {
-    item.addEventListener("click", function(){
-        colDescs.forEach((element)=>{
-            element.classList.add("none");
-        })
-        colDescs[index].classList.toggle('none');
-    
-        item.classList.toggle('rorateBtn');
-    })
-})
+// colBtns.forEach(function (item, index) {
+//     item.addEventListener("click", function () {
+//         colDescs.forEach((element) => {
+//             element.classList.add("none");
+//         })
+//         colDescs[index].classList.toggle('none');
 
+//         item.classList.toggle('rorateBtn');
+//     })
+// })
 
-$(function() {
-	$('.video__popup__link').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+// =================================================================
+$(function () {
+    $('.video__popup__link').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
 
-		fixedContentPos: false
-	});
+        fixedContentPos: false
+    });
 });
 
+// ===================================================================
+
+const addForm = document.querySelector('#add-form');
+const errorMessage = document.querySelectorAll('.error-message');
+const nameClient = document.querySelector('#nameClient');
+function validation(addForm) {
+
+    function removeError(input) {
+        const parent = input.parentNode;
+        if (parent.classList.contains('error')) {
+            parent.classList.remove('error')
+        }
+        const error = parent.querySelector('.error__message');
+        if (error) {
+            error.classList.remove('active');
+        }
+    }
+    function createError(input) {
+        const parent = input.parentNode;
+        parent.classList.add('error');
+        const error = parent.querySelector('.error__message');
+        if (error) {
+            error.classList.add('active');
+        }
+    }
+
+    let result = true;
+
+    const allInputs = addForm.querySelectorAll('.input-field');
+    for (const input of allInputs) {
+
+
+        removeError(input);
+
+        if (input.value == '') {
+            createError(input);
+            result = false;
+        }
+    }
+
+
+    return result
+}
+addForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (validation(this) == true) {
+        alert("Форма проверена успешна");
+        this.reset();
+    }
+})
