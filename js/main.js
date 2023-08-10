@@ -56,7 +56,7 @@ function showText() {
         item.addEventListener('click', function () {
                 colText[index].classList.toggle('margin')
                 if(colText[index].classList.contains('margin')){
-                    colText[index].style.marginTop = '-132px';
+                    colText[index].style.marginTop = '-293px';
                     colText[index].style.transition = 'margin-top, .6s ease';
                 }
                 item.classList.toggle('rorate');

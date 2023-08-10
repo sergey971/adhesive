@@ -14,7 +14,7 @@
 }
 
 .notMargin {
-  margin-top: -132px !important;
+  margin-top: -293px !important;
   -webkit-transition: margin-top 2s ease-in-out;
   transition: margin-top 2s ease-in-out;
 }
@@ -630,7 +630,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 133%;
-  margin-top: -132px;
+  margin-top: -293px;
 }
 
 .none {
