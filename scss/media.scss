@@ -62,13 +62,13 @@
 
         &__image {
             img {
-                max-width: none !important;
-                width: 396px;
+                // max-width: none !important;
+                // width: 396px;
             }
         }
 
         &__desc {
-            width: max-content;
+            // width: max-content;
         }
 
     }
@@ -171,7 +171,7 @@
 
     .questions {
         &__row {
-            width: 92%;
+            width: 100%;
         }
 
         &__title {
@@ -209,7 +209,7 @@
 
     .machine {
         &__row {
-            width: 91%;
+            width: 100%;
         }
 
         &__left__box {
@@ -230,7 +230,7 @@
 
     .form {
         .shape {
-            width: 90%;
+            width: 100%;
 
             &__body {
                 margin-left: 0px !important;
@@ -262,4 +262,13 @@
 
 }
 
-@media (max-width: 386px) {}
+@media (max-width: 320px) {
+    .materials{
+        &__row{
+            margin-left: 11px;
+        }
+        &__col {
+            max-width: 100%;
+        }
+    }
+}

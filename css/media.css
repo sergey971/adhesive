@@ -39,15 +39,6 @@
   .namePage__title h1 {
     font-size: 32px;
   }
-  .namePage__image img {
-    max-width: none !important;
-    width: 396px;
-  }
-  .namePage__desc {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
   .advantages {
     margin-top: 0px;
   }
@@ -127,7 +118,7 @@
     transition: all 0.3s ease;
   }
   .questions__row {
-    width: 92%;
+    width: 100%;
   }
   .questions__title h2 {
     font-size: 24px !important;
@@ -153,7 +144,7 @@
     font-size: 24px;
   }
   .machine__row {
-    width: 91%;
+    width: 100%;
   }
   .machine__left__box {
     width: 98%;
@@ -172,7 +163,7 @@
     transition: all 0.3s ease;
   }
   .form .shape {
-    width: 90%;
+    width: 100%;
   }
   .form .shape__body {
     margin-left: 0px !important;
@@ -198,5 +189,13 @@
   }
   .questions__body {
     width: 96%;
+  }
+}
+@media (max-width: 320px) {
+  .materials__row {
+    margin-left: 11px;
+  }
+  .materials__col {
+    max-width: 100%;
   }
 }
