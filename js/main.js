@@ -54,12 +54,12 @@ const colText = document.querySelectorAll(".questions__col__desc__text");
 function showText() {
     colBtns.forEach(function (item, index) {
         item.addEventListener('click', function () {
-                colText[index].classList.toggle('margin')
-                if(colText[index].classList.contains('margin')){
-                    colText[index].style.marginTop = '-293px';
-                    colText[index].style.transition = 'margin-top, .6s ease';
-                }
-                item.classList.toggle('rorate');
+            colText[index].classList.toggle('margin')
+            if (colText[index].classList.contains('margin')) {
+                colText[index].style.marginTop = '-293px';
+                colText[index].style.transition = 'margin-top, .6s ease';
+            }
+            item.classList.toggle('rorate');
         });
     })
 }
@@ -101,6 +101,28 @@ $(function () {
 const addForm = document.querySelector('#add-form');
 const errorMessage = document.querySelectorAll('.error-message');
 const nameClient = document.querySelector('#nameClient');
+const surveys = document.querySelectorAll('.shape__survey');
+const quests = document.querySelectorAll('.shape__quest');
+
+
+    function toggleSurvey() {
+        surveys.forEach(function (survey) {
+            survey.classList.add('none')
+        })
+        quests.forEach((quest, index) => {
+            quest.addEventListener('mouseover', function () {
+                surveys[index].classList.remove('none');
+            });
+
+            quest.addEventListener('mouseout', function () {
+                surveys[index].classList.add('none');
+            });
+        });
+    }
+
+toggleSurvey();
+
+
 function validation(addForm) {
 
     function removeError(input) {
@@ -122,6 +144,7 @@ function validation(addForm) {
         }
     }
 
+
     let result = true;
 
     const allInputs = addForm.querySelectorAll('.input-field');
@@ -139,10 +162,24 @@ function validation(addForm) {
 
     return result
 }
+// function closeQuest(){
+//     quests.forEach(function(quest){
+//         quest.classList.add('none');
+//         quest.classList.remove('active');
+//     })
+// }
+// function openQuest(){
+//     quests.forEach(function(quest){
+//         quest.classList.remove('none');
+//         quest.classList.add('active');
+//     })
+// }
+
 addForm.addEventListener('submit', function (event) {
     event.preventDefault();
     if (validation(this) == true) {
         alert("Форма проверена успешна");
         this.reset();
     }
+
 })
