@@ -117,6 +117,10 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
+  .namePage__request a {
+    display: inline-block;
+    padding: 14px 7px;
+  }
   .questions__row {
     width: 100%;
   }
@@ -189,6 +193,12 @@
   }
   .questions__body {
     width: 96%;
+  }
+  .materials__row {
+    margin-left: 11px;
+  }
+  .materials__col {
+    max-width: 47%;
   }
 }
 @media (max-width: 320px) {

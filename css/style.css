@@ -607,6 +607,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 24px;
 }
 .questions .questions__col__title {
   -webkit-box-flex: 1;
@@ -677,7 +678,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 133%;
-  margin-top: -293px;
+  margin-top: -336px;
 }
 
 .none {
