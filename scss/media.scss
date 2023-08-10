@@ -145,6 +145,7 @@
             width: 95% !important;
             margin-bottom: 24px;
         }
+
         &__row {
             flex-direction: column-reverse;
             column-gap: 10px;
@@ -166,6 +167,13 @@
 
         * {
             transition: all 0.3s ease;
+        }
+    }
+
+    &__request {
+        a {
+            display: inline-block;
+            padding: 14px 7px;
         }
     }
 
@@ -260,13 +268,24 @@
         width: 96%;
     }
 
+    .materials {
+        &__row {
+            margin-left: 11px;
+        }
+
+        &__col {
+            max-width: 47%;
+        }
+    }
+
 }
 
 @media (max-width: 320px) {
-    .materials{
-        &__row{
+    .materials {
+        &__row {
             margin-left: 11px;
         }
+
         &__col {
             max-width: 100%;
         }
