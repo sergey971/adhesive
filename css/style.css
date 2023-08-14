@@ -586,6 +586,7 @@
 .questions__body {
   max-width: 860px;
   width: 100%;
+  margin-top: 112px;
 }
 .questions__col__row {
   display: -webkit-box;
